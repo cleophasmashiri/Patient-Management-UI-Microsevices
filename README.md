@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+#UI as a service with Spring Cloud Gateway and angular 1 and 5
+---
+This article is going to show how to compose a UI from multiple UI microservices,this us a number of benefits,for example autonomus build pipelines and deployments, autonomus teams and so forth.
 
-You can use the [editor on GitHub](https://github.com/cleophasmashiri/doctor-booking-consulting-ui/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I am going to break this into the following iterations
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cleophasmashiri/doctor-booking-consulting-ui/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. [UI as a service with Spring Cloud Gateway and angular 1 and 5](#link1).
+2. [Using configuration service (Cloud Configuration)](#link2).
+3. [Using discovery service(Eureka)]((#link3)).
+4. [Dockerise](#link4).
+5. [Authentication](#link5)
+ 
+Important Links
+1. [Angular 1.5 and 5, Javascript, Typescript](https://link1.com)
+2. [Markdown](https://link2.com).
+3. [Java, Spring Boot and Spring Cloud](https://link3.com).
+4. [Docker](https://link4.com).
