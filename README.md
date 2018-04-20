@@ -3,11 +3,11 @@
 This article is going to show you how to compose a UI from multiple UI microservices, this gives us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth.
 
 We are going to build patient booking, consultation and payment application. Our application is composed of the following UI microservices:
-1. Main UI microservice *(angular 5)*.
-2. Patient booking UI microservice *(angular 5)*.
-3. Staff booking managment UI microservice *(angular 5)*.
-4. Doctor consultation management microservice *(angular 5)*.
-5. Payments managment UI *(angular 1.5)*
+1. Main UI microservice **(angular 5)**.
+2. Patient booking UI microservice **(angular 5)**.
+3. Staff booking managment UI microservice **(angular 5)**.
+4. Doctor consultation management microservice **(angular 5)**.
+5. Payments managment UI **(angular 1.5)**
 
 We are using different versions of angular (1.x and 5) just to illustrate the ability to be UI framework agnostic when we break our UI into microservices.
 
