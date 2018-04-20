@@ -1,4 +1,4 @@
-#UI as a service with Spring Cloud Gateway and angular 1 and 5
+# UI as a service with Spring Cloud Gateway and angular 1 and 5
 ---
 This article is going to show how to compose a UI from multiple UI microservices,this us a number of benefits,for example autonomus build pipelines and deployments, autonomus teams and so forth.
 
