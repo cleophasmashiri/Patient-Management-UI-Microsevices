@@ -1,8 +1,8 @@
 # UI as a service with Spring Cloud Gateway and angular 1 and 5
 ---
-This article is going to show how to compose a UI from multiple UI microservices,this us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth.
+This article is going to show you how to compose a UI from multiple UI microservices, this gives us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth.
 
-We are going build patient booking, consultation and payment application. Our application is composed of the following UI microservices:
+We are going to build patient booking, consultation and payment application. Our application is composed of the following UI microservices:
 1. Main UI microservice _angular 5_.
 2. Patient booking UI microservice _angular 5_.
 3. Staff booking managment UI microservice _angular 5_.
