@@ -8,6 +8,9 @@ zuul:
     booking:
       url: http://localhost:9083
       sensitive-headers:
+    payment:
+      url: http://localhost:9084
+      sensitive-headers:
     patient:
       url: http://localhost:9082
       sensitive-headers:

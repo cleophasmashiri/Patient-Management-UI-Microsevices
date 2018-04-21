@@ -1,0 +1,2 @@
+rm -rf node_modules
+./mvnw spring-boot:run

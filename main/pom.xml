@@ -77,20 +77,16 @@
             <goals>
               <goal>npm</goal>
             </goals>
-            <!--<phase>generate-resources</phase>-->
           </execution>
-          <!--<execution>-->
-            <!--<id>bower install</id>-->
-            <!--<goals>-->
-              <!--<goal>bower</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
-          <!--<execution>-->
-            <!--<id>gulp build</id>-->
-            <!--<goals>-->
-              <!--<goal>gulp</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
+          <execution>
+            <id>npm-build</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run-script build</arguments>
+            </configuration>
+          </execution>
         </executions>
 			</plugin>
 		</plugins>
