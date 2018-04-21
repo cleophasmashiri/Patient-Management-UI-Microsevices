@@ -71,29 +71,27 @@
 				<configuration>
 					<nodeVersion>v8.8.1</nodeVersion>
 				</configuration>
-				<executions>
-					<execution>
-						<id>install-npm</id>
-						<goals>
-							<goal>install-node-and-npm</goal>
-						</goals>
-					</execution>
+        <executions>
           <execution>
             <id>npm-install</id>
             <goals>
               <goal>npm</goal>
             </goals>
+            <!--<phase>generate-resources</phase>-->
           </execution>
-          <execution>
-            <id>npm-build</id>
-            <goals>
-              <goal>npm</goal>
-            </goals>
-            <configuration>
-              <arguments>run-script build</arguments>
-            </configuration>
-          </execution>
-				</executions>
+          <!--<execution>-->
+            <!--<id>bower install</id>-->
+            <!--<goals>-->
+              <!--<goal>bower</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+          <!--<execution>-->
+            <!--<id>gulp build</id>-->
+            <!--<goals>-->
+              <!--<goal>gulp</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+        </executions>
 			</plugin>
 		</plugins>
 	</build>
