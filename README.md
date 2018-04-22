@@ -42,7 +42,8 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 4. Add angular 5 app into main. 
 -_For more details on this check this article [Spring Angular](http://bit.ly/angular5-spring-boot)_
 -a. In your pom add Maven Front-end plugin.
-> <build
+
+<build
     <plugins
         <plugin
             <groupIdorg.springframework.boot</groupId
@@ -68,6 +69,8 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 </build
 
 
+
+
 -b. Run the following to install node and npm locally
 > /mvnw generate-resources
 
@@ -75,9 +78,9 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 - Create file npm in the root folder and copy the following.
 
 > #!/bin/sh
-cd $(dirname $0)
-PATH="$PWD/node/":$PATH
-node "node/node_modules/npm/bin/npm-cli.js" "$@"
+> cd $(dirname $0)
+> PATH="$PWD/node/":$PATH
+> node "node/node_modules/npm/bin/npm-cli.js" "$@"
 
 - Run the following command in your terminal.
 > chmod +x npm
