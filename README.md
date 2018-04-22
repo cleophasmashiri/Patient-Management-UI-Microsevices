@@ -14,7 +14,6 @@ We are going to build patient booking, consultation and payment application. Our
 
 ## Application Boundaries
 My motivation for breacking the UI as above, is to show you how to apply microservice thinking to a monlithic UI, this is problem you need to pay close attention. I have seen people breaking UI into technical components, you will cry if you do this. In DDD the concept of [bounded context](http://bit.ly/bounded-context) encourages us to breaking-up our domain models around business capabilities. I prefer to lean more torwards [Self-Contained-Systems](http://bit.ly/2JcwAtm). 
----
 
 We are going to break this into the following iterations.
 We are using different versions of angular (1.x and 5) just to illustrate the ability to be UI framework agnostic when we break our UI into microservices.
