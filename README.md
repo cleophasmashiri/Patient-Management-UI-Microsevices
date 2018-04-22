@@ -39,65 +39,73 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 1. Create parent folder patient-ui-as-microservices and cd into.
 2. Use https://start.spring.io/ add web and zuul dependencies, generate application and unzip copy the main project into patient-ui-as-microservices.
 3. ./mvnw spring-boot:run to check that everything whent smoothly.
-4. Add angular 5 app into main. For more details on this check this article, [Spring Angular](http://bit.ly/angular5-spring-boot)
-a. Add Maven Front-end plugin.
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-        <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <version>1.6</version>
-            <configuration>
-                <nodeVersion>v8.8.1</nodeVersion>
-            </configuration>
-            <executions>
-                <execution>
-                    <id>install-npm</id>
-                    <goals>
-                        <goal>install-node-and-npm</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
+4. Add angular 5 app into main. 
+-_For more details on this check this article [Spring Angular](http://bit.ly/angular5-spring-boot)_
+-a. In your pom add Maven Front-end plugin.
+> <build
+    <plugins
+        <plugin
+            <groupIdorg.springframework.boot</groupId
+            <artifactIdspring-boot-maven-plugin</artifactId
+        </plugin
+        <plugin
+            <groupIdcom.github.eirslett</groupId
+            <artifactIdfrontend-maven-plugin</artifactId
+            <version1.6</version
+            <configuration
+                <nodeVersionv8.8.1</nodeVersion
+            </configuration
+            <executions
+                <execution
+                    <idinstall-npm</id
+                    <goals
+                        <goalinstall-node-and-npm</goal
+                    </goals
+                </execution
+            </executions
+        </plugin
+    </plugins
+</build
 
-b. Run ./mvnw generate-resources to install node and npm locally
 
-c. Install angular cli
-Create file npm in the root folder and copy the following. 
+-b. Run the following to install node and npm locally
+> /mvnw generate-resources
 
-#!/bin/sh
+- c. Install angular cli
+- Create file npm in the root folder and copy the following.
+
+> #!/bin/sh
 cd $(dirname $0)
 PATH="$PWD/node/":$PATH
 node "node/node_modules/npm/bin/npm-cli.js" "$@"
 
-Run the following command in your terminal.
-chmod +x npm
-This is to make npm file executable.
+- Run the following command in your terminal.
+> chmod +x npm
 
-Install angula cli by running
-./npm install @angular/cli
+- _This is to make npm file executable._
 
-Create a program to run ng cli
-Create a file ng and copy the contents of:
-#!/bin/sh
+
+- Install angular cli by running
+
+> ./npm install @angular/cli
+
+- Create a program to run ng cli
+- Create a file _ng_ and copy the contents of:
+
+> #!/bin/sh
 cd $(dirname $0)
 PATH="$PWD/node/":"$PWD":$PATH
 node_modules/@angular/cli/bin/ng "$@"
 
-Make executable by running:
-chmod +x ng
+- Make executable by running:
+ > chmod +x ng
 
-Create a new application as follows:
-./ng new client
+- Create a new application as follows:
+ > ./ng new client
 
-Move it into root folder by executing the follwing.
-$ cat client/.gitignore >> .gitignore
+- Move it into root folder by executing the follwing.
+
+> $ cat client/.gitignore  .gitignore
 $ rm -rf client/node* client/src/favicon.ico client/.gitignore client/.git
 $ sed -i '/node_/anode/' .gitignore
 $ cp -rf client/* .
@@ -105,48 +113,51 @@ $ cp client/.??* .
 $ rm -rf client
 $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
 
-Building
-Add the following into the pom.xml, under front-end maven plugin.
-<execution>
-    <id>npm-install</id>
-    <goals>
-        <goal>npm</goal>
-    </goals>
-</execution>
+- Building
+- Add the following into the pom.xml, under front-end maven plugin.
 
-Testing
-Run the following
+> <execution
+    <idnpm-install</id
+    <goals
+        <goalnpm</goal
+    </goals
+</execution
 
-./ng e2e
+- Testing
+- Run the following
 
-You should see something like below.
+ > ./ng e2e
 
-Executed 1 of 1 spec SUCCESS in 0.718 sec.
+- You should see something like below.
 
-Add the following to the maven front-end plugin
-    <execution>
-        <id>npm-build</id>
-        <goals>
-            <goal>npm</goal>
-        </goals>
-        <configuration>
-            <arguments>run-script build</arguments>
-        </configuration>
-    </execution>
+- > Executed 1 of 1 spec SUCCESS in 0.718 sec.
 
-Add bootstrap
-./npm install bootstrap@3 jquery --save
+- Add the following to the maven front-end plugin
+   
+   > <execution
+        <idnpm-build</id
+        <goals
+            <goalnpm</goal
+        </goals
+        <configuration
+            <argumentsrun-script build</arguments
+        </configuration
+    </execution
 
-Update .angular-cli.json
+- Add bootstrap
+- ./npm install bootstrap@3 jquery --save
 
-From
-"styles": [
+- Update .angular-cli.json
+
+- From
+
+> "styles": [
     "styles.css"
   ],
   "scripts": [],
   
   To
-  "styles.css",
+  > "styles.css",
     "../node_modules/bootstrap/dist/css/bootstrap.min.css"
   ],
   "scripts": [
