@@ -12,3 +12,8 @@
 .thumbnail img.pull-right {
   width: 50px;
 }
+.active {
+  color: #fff!important;
+  background-color: #007bff;
+  border-color: #007bff;
+}

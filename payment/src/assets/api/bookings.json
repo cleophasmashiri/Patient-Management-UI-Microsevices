@@ -1,0 +1,29 @@
+[
+  {
+    "firstname": "Peter",
+    "lastname": "Moses",
+    "email": "peter@somedamin.com",
+    "phone": "0863343454",
+    "appointmentDate": 1524342535,
+    "doctor": "Mike Gibbs",
+    "amountDue": 2000
+  },
+  {
+    "firstname": "John",
+    "lastname": "Made",
+    "email": "john@somedamin.com",
+    "phone": "0563343454",
+    "appointmentDate": 1524342535,
+    "doctor": "Mike Gibbs",
+    "amountDue": 2000
+  },
+  {
+    "firstname": "Isaac",
+    "lastname": "Newton",
+    "email": "isaac@somedamin.com",
+    "phone": "0363343454",
+    "appointmentDate": 1524342535,
+    "doctor": "Bill Nutty",
+    "amountDue": 2000
+  }
+]

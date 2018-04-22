@@ -2,6 +2,10 @@
   <h5 class="my-0 mr-md-auto font-weight-normal">Patient Management Centre</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="/main/">Home</a>
+    <a class="active p-2 text-dark" href="/patient/">Patients</a>
+    <a class="p-2 text-dark" href="/booking/">Bookings <small>Staff only</small></a>
+    <a class="p-2 text-dark" href="/doctor/">Doctors</a>
+    <a class="p-2 text-dark" href="/payment/">Payments</a>
   </nav>
   <a class="btn btn-outline-primary" href="#">Sign up</a>
 </div>
@@ -32,8 +36,31 @@
     </div>
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
   </form>
+  <br>
+  <hr>
+  <h2>My Current Bookings</h2>
+  <table class="table table-striped table-hover">
+    <thead>
+    <tr>
+      <th style="width:23%;">Appointment Date</th>
+      <th style="width:15%;">Doctor</th>
+      <th style="width:10%;"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let booking of bookings" class="online">
+      <td class="cell-detail"><span class="cell-detail-description"><small>{{booking.appointmentDate | date: 'MMM d, y h:mm:ss a'}}</small></span></td>
+      <td class="cell-detail"><span class="cell-detail-description">{{booking.doctor}}</span></td>
+      <td class="text-right">
+        <div class="btn-group btn-hspace">
+          <button type="button" class="btn btn-secondary">View Booking<span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+          <button type="button" class="btn btn-danger">Cancel<span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
