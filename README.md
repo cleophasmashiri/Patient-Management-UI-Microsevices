@@ -26,6 +26,27 @@ We are going to break our deliverables into the following iterations.
 4. [Dockerise Part-4](#link4).
 5. [Authentication Part-5](#link5)
 
+## [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
+In this part 1 article, we are going to develop 5 UI applications as microservices, this seems a lot work in one iteration, but these are skeleton applications that will help us to physical show the idea of UI as microservice. 
+
+1. Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**.
+2. Patient booking UI microservice **(Angular 5 and Spring-boot)**.
+3. Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
+4. Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
+5. Payments managment UI **(Angular 1.5 and Spring-boot)**
+
+### Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**.
+1. Create parent folder patient-ui-as-microservices and cd into.
+2. spring init --dependencies=web,zuul main 
+or use https://start.spring.io/ add web and zuul dependencies. Copy the main project from this step 2 into patient-ui-as-microservices.
+2. And angular 5 app into main. 
+cd into main project root folder.
+
+### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
+### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
+### Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
+### Payments managment UI **(Angular 1.5 and Spring-boot)**
+
  
 ## Important Links
 1. [Angular 1.5 and 5, Javascript, Typescript](https://link1.com)
