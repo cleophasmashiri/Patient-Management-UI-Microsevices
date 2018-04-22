@@ -37,10 +37,126 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 
 ### Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**.
 1. Create parent folder patient-ui-as-microservices and cd into.
-2. spring init --dependencies=web,zuul main 
-or use https://start.spring.io/ add web and zuul dependencies. Copy the main project from this step 2 into patient-ui-as-microservices.
-2. And angular 5 app into main. 
-cd into main project root folder.
+2. Use https://start.spring.io/ add web and zuul dependencies, generate application and unzip copy the main project into patient-ui-as-microservices.
+3. ./mvnw spring-boot:run to check that everything whent smoothly.
+4. Add angular 5 app into main. For more details on this check this article, [Spring Angular](http://bit.ly/angular5-spring-boot)
+a. Add Maven Front-end plugin.
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+            <groupId>com.github.eirslett</groupId>
+            <artifactId>frontend-maven-plugin</artifactId>
+            <version>1.6</version>
+            <configuration>
+                <nodeVersion>v8.8.1</nodeVersion>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>install-npm</id>
+                    <goals>
+                        <goal>install-node-and-npm</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+b. Run ./mvnw generate-resources to install node and npm locally
+
+c. Install angular cli
+Create file npm in the root folder and copy the following. 
+
+#!/bin/sh
+cd $(dirname $0)
+PATH="$PWD/node/":$PATH
+node "node/node_modules/npm/bin/npm-cli.js" "$@"
+
+Run the following command in your terminal.
+chmod +x npm
+This is to make npm file executable.
+
+Install angula cli by running
+./npm install @angular/cli
+
+Create a program to run ng cli
+Create a file ng and copy the contents of:
+#!/bin/sh
+cd $(dirname $0)
+PATH="$PWD/node/":"$PWD":$PATH
+node_modules/@angular/cli/bin/ng "$@"
+
+Make executable by running:
+chmod +x ng
+
+Create a new application as follows:
+./ng new client
+
+Move it into root folder by executing the follwing.
+$ cat client/.gitignore >> .gitignore
+$ rm -rf client/node* client/src/favicon.ico client/.gitignore client/.git
+$ sed -i '/node_/anode/' .gitignore
+$ cp -rf client/* .
+$ cp client/.??* .
+$ rm -rf client
+$ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
+
+Building
+Add the following into the pom.xml, under front-end maven plugin.
+<execution>
+    <id>npm-install</id>
+    <goals>
+        <goal>npm</goal>
+    </goals>
+</execution>
+
+Testing
+Run the following
+
+./ng e2e
+
+You should see something like below.
+
+Executed 1 of 1 spec SUCCESS in 0.718 sec.
+
+Add the following to the maven front-end plugin
+    <execution>
+        <id>npm-build</id>
+        <goals>
+            <goal>npm</goal>
+        </goals>
+        <configuration>
+            <arguments>run-script build</arguments>
+        </configuration>
+    </execution>
+
+Add bootstrap
+./npm install bootstrap@3 jquery --save
+
+Update .angular-cli.json
+
+From
+"styles": [
+    "styles.css"
+  ],
+  "scripts": [],
+  
+  To
+  "styles.css",
+    "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ],
+  "scripts": [
+    "../node_modules/jquery/dist/jquery.min.js",
+    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ],
+
+Run 
+./mvnw spring-boot:run
+
 
 ### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
 ### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
