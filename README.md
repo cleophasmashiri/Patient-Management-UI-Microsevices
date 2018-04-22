@@ -5,7 +5,7 @@ This article is going to show you how to develop UI as multiple UI microsevices,
 This article draws inspiration from a number of places. Having worked on large scale UI projects and experienced the pain, from slowness of delivering, hardiship of migrating from angular 1.x to 5. This article also draws insipiration from Eric Evans's serminal book [Domain-Driven-Design](http://bit.ly/ddd-eric-evans), and [Vaugn Vernon](http://bit.ly/ddd-vv). I also drew some inspiration from microservices, in particular, [Sam Newman Ground-breaking book](http://bit.ly/microservices-sm) 
 
 ## The business problem.
-We are going to build standalone UI application that function as one application. We going to buid applications that work together to deliver seamless patient experience, from patient own booking app, staff booking app, doctor consultation app and payment application. Our application is composed of the following UI microservices:
+We are going to build standalone UI applications that function as one application to deliver seamless patient experience, from patient own booking app, staff booking app, doctor consultation app and payment application. Our application is composed of the following UI microservices:
 1. Main UI microservice **(angular 5)**.
 2. Patient booking UI microservice **(angular 5)**.
 3. Staff booking managment UI microservice **(angular 5)**.
