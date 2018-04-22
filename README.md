@@ -119,7 +119,7 @@ $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
 - Building
 - Add the following into the pom.xml, under front-end maven plugin.
 
-> <execution
+ <execution
     <idnpm-install</id
     <goals
         <goalnpm</goal
@@ -137,7 +137,7 @@ $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
 
 - Add the following to the maven front-end plugin
    
-   > <execution
+    <execution
         <idnpm-build</id
         <goals
             <goalnpm</goal
