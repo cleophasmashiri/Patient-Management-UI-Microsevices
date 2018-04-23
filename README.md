@@ -242,13 +242,6 @@ zuul:
       sensitive-headers:
 ```
 
-
-## How to run the apps.
- git clone https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices.git
- Or use your own applications
- 
- . cd to Patient-Management-UI-Microsevices folder
-
 ### To create projects booking, doctor and patient:
 
  copy the project main as  booking and remove the zuul dependency from the pom.xml
@@ -275,9 +268,19 @@ server:
 | payment         | 9084          |
 
 
+## How to run the apps.
+
+ . cd to Patient-Management-UI-Microsevices folder and run the following
+ Unix or Mac os
 ```
  ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
 ```
+
+Windows
+```
+ main/mvnw.cmd spring-boot:run && patient/mvnw.cmd spring-boot:run && doctor/mvnw.cmd spring-boot:run && payment/mvnw.cmd spring-boot:run && ./booking/mvnw.cmd spring-boot:run
+```
+
 This is the end of part 1 of the application.
 
 1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
