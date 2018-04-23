@@ -19,7 +19,7 @@ Figure 2 Patient Booking application
 Figure 3 Doctor Consultation application
 
 ---
-![Booking Management for admin staff application](/images/booking.png "Booking")
+![Booking Management for admin staff application](/images/booking.png)
 Figure 4 Booking Management for admin staff application
 
 ---
