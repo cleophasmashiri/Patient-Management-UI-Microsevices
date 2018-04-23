@@ -14,9 +14,19 @@ export class BookingService {
   }
 
   getBookings(userId: string): Observable<Booking[]> {
-    console.log(this.http.get('/assets/api/bookings.json'));
     return this.http.get('assets/api/bookings.json')
       .map(response => <Booking[]>response.json())
+      //.do(data => console.log(data))
+      .catch(error => Observable.throw(error));
+  }
+
+  getBookingById(bookingId: string): Observable<Booking> {
+    return this.http.get('assets/api/bookings.json')
+      .map(response => {
+        let booking = <Booking>response.json().find(booking => booking.bookingId == bookingId);
+        console.log(booking);
+        return booking;
+      })
       //.do(data => console.log(data))
       .catch(error => Observable.throw(error));
   }

@@ -1,5 +1,6 @@
 [
   {
+    "bookingId": 1,
     "firstname": "Peter",
     "lastname": "Moses",
     "email": "peter@somedamin.com",
@@ -8,6 +9,7 @@
     "doctor": "Mike Gibbs"
   },
   {
+    "bookingId": 2,
     "firstname": "John",
     "lastname": "Made",
     "email": "john@somedamin.com",
@@ -16,6 +18,7 @@
     "doctor": "Mike Gibbs"
   },
   {
+    "bookingId": 3,
     "firstname": "Isaac",
     "lastname": "Newton",
     "email": "isaac@somedamin.com",
