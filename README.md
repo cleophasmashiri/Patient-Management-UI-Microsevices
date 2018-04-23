@@ -192,6 +192,17 @@ Run
 ./mvnw spring-boot:run
 ```
 
+## How to run the apps.
+ git clone https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices.git
+ Or use your own applications
+ 
+ . cd to Patient-Management-UI-Microsevices folder
+
+```
+ ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
+```
+ 
+
 ### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
 ### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
 ### Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
