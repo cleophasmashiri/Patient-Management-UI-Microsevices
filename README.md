@@ -23,7 +23,7 @@ Figure 3 Doctor Consultation application
 Figure 4 Booking Management for admin staff application
 
 ---
-![Payment application](/images/payment.png "Payment")
+![Payment application](/images/payment.png)
 Figure 5 Payment application
 
 ---
