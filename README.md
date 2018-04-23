@@ -8,23 +8,24 @@ This article draws inspiration from a number of places. Having worked on large s
 
 ---
 ![Main container application](/images/main.png)
-> Figure 1 Main container application
+Figure 1 Main container application
 
 ---
 ![Patient facing application](/images/patient.png)
-. Figure 2 Patient Booking application
+Figure 2 Patient Booking application
 
 ---
 ![Doctor Consultation application](/images/doctor.png)
-. Figure 3 Doctor Consultation application
+Figure 3 Doctor Consultation application
 
 ---
 ![Booking Management for admin staff application](/images/booking.png "Booking")
-. Figure 4 Booking Management for admin staff application
+Figure 4 Booking Management for admin staff application
 
 ---
 ![Payment application](/images/payment.png "Payment")
-. Figure 5 Payment application
+Figure 5 Payment application
+
 ---
 
 ## The business problem.
