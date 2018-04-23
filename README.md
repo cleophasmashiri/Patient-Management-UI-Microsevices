@@ -218,11 +218,62 @@ Run
 ./mvnw spring-boot:run
 ```
 
+Rename application.properties to application.yml and add the following into it.
+
+```
+server:
+  port: 9080
+zuul:
+  routes:
+    doctor:
+      url: http://localhost:9081
+      sensitive-headers:
+    booking:
+      url: http://localhost:9083
+      sensitive-headers:
+    payment:
+      url: http://localhost:9084
+      sensitive-headers:
+    patient:
+      url: http://localhost:9082
+      sensitive-headers:
+    main:
+      url: http://localhost:9080
+      sensitive-headers:
+```
+
+
 ## How to run the apps.
  git clone https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices.git
  Or use your own applications
  
  . cd to Patient-Management-UI-Microsevices folder
+
+### To create projects booking, doctor and patient:
+
+ copy the project main as  booking and remove the zuul dependency from the pom.xml
+
+```
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+	</dependency>
+```
+Make copy booking to make doctor and patient projects.
+
+Update application.yml as per table 1 below
+server:
+    port: 9080
+
+##### Table 1
+
+| application.yml | Port          |
+| --------------- |:-------------:|
+| doctor          | 9081          |
+| booking         | 9082          |
+| patient         | 9083          |
+| payment         | 9084          |
+
 
 ```
  ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
