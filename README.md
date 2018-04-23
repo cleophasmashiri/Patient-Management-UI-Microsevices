@@ -253,7 +253,14 @@ zuul:
 
 ### To create projects booking, doctor and patient:
 
- copy the project main as  booking and remove the zuul dependency from the pom.xml
+ copy the project main as booking:
+  1. Remove the zuul dependency from the pom.xml
+  2. Remove @EnableZuulProxy from the MainApplication
+
+     ```
+     @EnableZuulProxy
+     public class MainApplication
+     ```
 
 ```
 	<dependency>
