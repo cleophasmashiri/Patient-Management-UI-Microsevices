@@ -6,25 +6,29 @@ Applying Microservice on the UI is not that common, I have seen examples using [
 
 This article draws inspiration from a number of places. Having worked on large scale UI projects and experienced the pain, from slowness of delivering, hardiship of migrating from angular 1.x to 5. This article also draws insipiration from Eric Evans's serminal book [Domain-Driven-Design](http://bit.ly/ddd-eric-evans), and [Vaugn Vernon](http://bit.ly/ddd-vv). I also drew some inspiration from microservices, in particular, [Sam Newman Ground-breaking book](http://bit.ly/microservices-sm) 
 
+### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
+### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
+### Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
+### Payments managment UI **(Angular 1.5 and Spring-boot)**
 ---
 ![Main container application](/images/main.png)
-Figure 1 Main container application
+Figure 1 Main container application, Angular 5 and Spring-boot.
 
 ---
 ![Patient facing application](/images/patient.png)
-Figure 2 Patient Booking application
+Figure 2 Patient Booking application, Angular 5 and Spring-boot.
 
 ---
 ![Doctor Consultation application](/images/doctor.png)
-Figure 3 Doctor Consultation application
+Figure 3 Doctor Consultation application, Angular 5 and Spring-boot.
 
 ---
 ![Booking Management for admin staff application](/images/booking.png)
-Figure 4 Booking Management for admin staff application
+Figure 4 Booking Management for admin staff application, Angular 5 and Spring-boot.
 
 ---
 ![Payment application](/images/payment.png)
-Figure 5 Payment application
+Figure 5 Payment application, Angular 1.5 and Spring-boot
 
 ---
 
@@ -224,12 +228,6 @@ Run
  ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
 ```
 
-### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
-### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
-### Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
-### Payments managment UI **(Angular 1.5 and Spring-boot)**
-
- 
 ## Important Links
 1. [Angular 1.5 and 5, Javascript, Typescript](https://link1.com)
 2. [Markdown](https://link2.com).
