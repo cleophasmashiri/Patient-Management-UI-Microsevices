@@ -213,6 +213,15 @@ $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
     "../node_modules/bootstrap/dist/js/bootstrap.min.js"
   ],
 ```
+
+Add @EnableZuulProxy to the MainApplication
+
+```
+@EnableZuulProxy
+public class MainApplication
+```
+
+
 Run
 ```
 ./mvnw spring-boot:run
