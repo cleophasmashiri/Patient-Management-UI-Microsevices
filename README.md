@@ -43,71 +43,82 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 -_For more details on this check this article [Spring Angular](http://bit.ly/angular5-spring-boot)_
 -a. In your pom add Maven Front-end plugin.
 
-<build
-    <plugins
-        <plugin
-            <groupIdorg.springframework.boot</groupId
-            <artifactIdspring-boot-maven-plugin</artifactId
-        </plugin
-        <plugin
-            <groupIdcom.github.eirslett</groupId
-            <artifactIdfrontend-maven-plugin</artifactId
-            <version1.6</version
-            <configuration
-                <nodeVersionv8.8.1</nodeVersion
-            </configuration
-            <executions
-                <execution
-                    <idinstall-npm</id
-                    <goals
-                        <goalinstall-node-and-npm</goal
-                    </goals
-                </execution
-            </executions
-        </plugin
-    </plugins
-</build
-
-
-
+.pom.xml
+```
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+            <groupId>com.github.eirslett</groupId>
+            <artifactId>frontend-maven-plugin</artifactId>
+            <version>1.6</version>
+            <configuration>
+                <nodeVersion>v8.8.1</nodeVersion>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>install-npm</id>
+                    <goals>
+                        <goal>install-node-and-npm</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+```
 
 -b. Run the following to install node and npm locally
-> /mvnw generate-resources
-
-- c. Install angular cli
+ ```
+ /mvnw generate-resources
+```
+- Install angular cli
 - Create file npm in the root folder and copy the following.
 
-> #!/bin/sh
-> cd $(dirname $0)
-> PATH="$PWD/node/":$PATH
-> node "node/node_modules/npm/bin/npm-cli.js" "$@"
+```
+ #!/bin/sh
+ cd $(dirname $0)
+ PATH="$PWD/node/":$PATH
+ node "node/node_modules/npm/bin/npm-cli.js" "$@"
+```
 
 - Run the following command in your terminal.
-> chmod +x npm
-
+```
+chmod +x npm
+```
 - _This is to make npm file executable._
 
 
 - Install angular cli by running
 
-> ./npm install @angular/cli
+```
+./npm install @angular/cli
+```
 
 - Create a program to run ng cli
 - Create a file _ng_ and copy the contents of:
 
-> #!/bin/sh
+```
+#!/bin/sh
 cd $(dirname $0)
 PATH="$PWD/node/":"$PWD":$PATH
 node_modules/@angular/cli/bin/ng "$@"
+```
 
 - Make executable by running:
- > chmod +x ng
+```
+ chmod +x ng
+```
 
 - Create a new application as follows:
- > ./ng new client
-
+```
+ ./ng new client
+```
 - Move it into root folder by executing the follwing.
-
+```
 > $ cat client/.gitignore  .gitignore
 $ rm -rf client/node* client/src/favicon.ico client/.gitignore client/.git
 $ sed -i '/node_/anode/' .gitignore
@@ -115,21 +126,24 @@ $ cp -rf client/* .
 $ cp client/.??* .
 $ rm -rf client
 $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
+```
 
 - Building
 - Add the following into the pom.xml, under front-end maven plugin.
 
+```
  <execution
     <idnpm-install</id
     <goals
         <goalnpm</goal
     </goals
 </execution
-
+```
 - Testing
 - Run the following
-
- > ./ng e2e
+```
+ ./ng e2e
+```
 
 - You should see something like below.
 
@@ -137,40 +151,46 @@ $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
 
 - Add the following to the maven front-end plugin
    
-    <execution
-        <idnpm-build</id
-        <goals
-            <goalnpm</goal
-        </goals
-        <configuration
-            <argumentsrun-script build</arguments
-        </configuration
-    </execution
-
+```
+    <execution>
+        <idnpm-build</id>
+        <goals>
+            <goalnpm</goal>
+        </goals>
+        <configuration>
+            <argumentsrun-script build</arguments>
+        </configuration>
+    </execution>
+```
 - Add bootstrap
-- ./npm install bootstrap@3 jquery --save
+```
+./npm install bootstrap@3 jquery --save
+```
 
 - Update .angular-cli.json
 
 - From
-
-> "styles": [
+```
+ "styles": [
     "styles.css"
   ],
   "scripts": [],
+  ```
   
   To
-  > "styles.css",
+  ```
+  "styles.css",
     "../node_modules/bootstrap/dist/css/bootstrap.min.css"
   ],
   "scripts": [
     "../node_modules/jquery/dist/jquery.min.js",
     "../node_modules/bootstrap/dist/js/bootstrap.min.js"
   ],
-
-Run 
+```
+Run
+```
 ./mvnw spring-boot:run
-
+```
 
 ### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
 ### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
