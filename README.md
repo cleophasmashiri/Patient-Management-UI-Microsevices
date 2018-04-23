@@ -6,8 +6,26 @@ Applying Microservice on the UI is not that common, I have seen examples using [
 
 This article draws inspiration from a number of places. Having worked on large scale UI projects and experienced the pain, from slowness of delivering, hardiship of migrating from angular 1.x to 5. This article also draws insipiration from Eric Evans's serminal book [Domain-Driven-Design](http://bit.ly/ddd-eric-evans), and [Vaugn Vernon](http://bit.ly/ddd-vv). I also drew some inspiration from microservices, in particular, [Sam Newman Ground-breaking book](http://bit.ly/microservices-sm) 
 
+...
 ![Main container application](/images/main.png)
-. Figure 1 Main container application
+> Figure 1 Main container application
+
+...
+![Patient facing application](/images/patient.png)
+. Figure 2 Patient Booking application
+
+....
+![Doctor Consultation application](/images/doctor.png)
+. Figure 3 Doctor Consultation application
+
+...
+![Booking Management for admin staff application](/images/booking.png "Booking")
+. Figure 4 Booking Management for admin staff application
+
+...
+![Payment application](/images/payment.png "Payment")
+. Figure 5 Payment application
+...
 
 ## The business problem.
 We are going to build standalone UI applications that function as one application to deliver seamless patient experience, from patient own booking app, staff booking app, doctor consultation app and payment application. We are going to use different versions of angular (1.x and 5), just to illustrate the ability to be UI framework agnostic when we break our UI into microservices. Our application is composed of the following UI microservices:
@@ -204,19 +222,6 @@ Run
 ```
  ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
 ```
-You should be able to see the figure 1  as well as figure 2, 3, 4 and 5 below.
-
-![Patient facing application](/images/patient.png)
-. Figure 2 Patient Booking application
-
-![Doctor Consultation application](/images/doctor.png)
-. Figure 3 Doctor Consultation application
-
-![Booking Management for admin staff application](/images/booking.png "Booking")
-. Figure 4 Booking Management for admin staff application
-
-![Payment application](/images/payment.png "Payment")
-. Figure 5 Payment application
 
 ### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
 ### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
