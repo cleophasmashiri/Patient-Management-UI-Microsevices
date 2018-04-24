@@ -13,7 +13,7 @@ This article draws inspiration from a number of places. Having worked on large s
 ![Main container application](/images/main.png)
 Figure 1 Main container application, Angular 5 and Spring-boot.
 
-** [View the demo on heroku](https://med101.herokuapp.com/) **
+**[View the demo on heroku](https://med101.herokuapp.com/)**
 
 ---
 
