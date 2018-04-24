@@ -34,7 +34,7 @@ We are going to break our deliverables into the following iterations.
 1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
 2. [Using configuration service (Cloud Configuration) Part-2](#link2).
 3. [Using discovery service(Eureka) Part-3]((#link3)).
-4. [Dockerise Part-4](#link4).
+4. [Deploy to Heroku](#link4).
 5. [Authentication Part-5](#link5)
 
 ## [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
