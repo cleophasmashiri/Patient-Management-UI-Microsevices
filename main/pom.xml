@@ -73,6 +73,12 @@
 				</configuration>
         <executions>
           <execution>
+            <id>install-npm</id>
+            <goals>
+              <goal>install-node-and-npm</goal>
+            </goals>
+          </execution>
+          <execution>
             <id>npm-install</id>
             <goals>
               <goal>npm</goal>
