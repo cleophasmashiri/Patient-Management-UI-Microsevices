@@ -10,10 +10,10 @@ Applying Microservice on the UI is not that common, I have seen examples using [
 This article draws inspiration from a number of places. Having worked on large scale UI projects and experienced the pain, from slowness of delivering, hardiship of migrating from angular 1.x to 5. This article also draws insipiration from Eric Evans's serminal book [Domain-Driven-Design](http://bit.ly/ddd-eric-evans), and [Vaugn Vernon](http://bit.ly/ddd-vv). I also drew some inspiration from microservices, in particular, [Sam Newman Ground-breaking book](http://bit.ly/microservices-sm) 
 
 ---
-[![Main container application](/images/main.png)](https://med101.herokuapp.com/)
+![Main container application](/images/main.png)
 Figure 1 Main container application, Angular 5 and Spring-boot.
 
-[View the demo on heroku](https://med101.herokuapp.com/)
+** [View the demo on heroku](https://med101.herokuapp.com/) **
 
 ---
 
