@@ -290,6 +290,7 @@ This is the end of part 1 of the application.
 4. [Dockerise Part-4](#link4).
 5. [Authentication Part-5](#link5)
 
+**[View the demo on heroku](https://med101.herokuapp.com/)**
 
 ## Important Links
 1. [Angular 1.5 and 5, Javascript, Typescript](https://link1.com)
