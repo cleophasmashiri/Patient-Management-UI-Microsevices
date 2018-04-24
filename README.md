@@ -1,4 +1,7 @@
 # UI as Microservices with Spring Cloud Gateway and angular 1 and 5
+
+[Facebook](https://www.facebook.com/cleophas.mashiri)
+
 ---
 This article is going to show you how to develop UI as multiple UI microsevices, in other words I am going to apply microservice concept to a UI. If this is done right, it gives us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth. 
 
@@ -6,10 +9,6 @@ Applying Microservice on the UI is not that common, I have seen examples using [
 
 This article draws inspiration from a number of places. Having worked on large scale UI projects and experienced the pain, from slowness of delivering, hardiship of migrating from angular 1.x to 5. This article also draws insipiration from Eric Evans's serminal book [Domain-Driven-Design](http://bit.ly/ddd-eric-evans), and [Vaugn Vernon](http://bit.ly/ddd-vv). I also drew some inspiration from microservices, in particular, [Sam Newman Ground-breaking book](http://bit.ly/microservices-sm) 
 
-### Patient booking UI microservice **(Angular 5 and Spring-boot)**.
-### Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
-### Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
-### Payments managment UI **(Angular 1.5 and Spring-boot)**
 ---
 ![Main container application](/images/main.png)
 Figure 1 Main container application, Angular 5 and Spring-boot.
