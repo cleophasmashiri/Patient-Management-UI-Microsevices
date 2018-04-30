@@ -38,7 +38,7 @@ We are going to break our deliverables into the following iterations.
 4. [Authentication Part-5](#link5)
 
 
-### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**: Part 1](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part1/README.md)
+### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part1/README.md)
 
 
 ### To create projects booking, doctor and patient:
