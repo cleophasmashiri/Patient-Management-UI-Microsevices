@@ -37,16 +37,8 @@ We are going to break our deliverables into the following iterations.
 3. [Using discovery service(Eureka) Part-3]((#link3)).
 4. [Authentication Part-5](#link5)
 
-## [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
-In this part 1 article, we are going to develop 5 UI applications as microservices, this seems a lot work in one iteration, but these are skeleton applications that will help us to physical show the idea of UI as microservice. 
 
-1. Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**.
-2. Patient booking UI microservice **(Angular 5 and Spring-boot)**.
-3. Staff booking managment UI microservice **(Angular 5 and and Spring-boot)**.
-4. Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
-5. Payments managment UI **(Angular 1.5 and Spring-boot)**
-
-### [Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**: Part 2](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part2/README.md)
+### [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**: Part 1](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part1/README.md)
 
 
 ### To create projects booking, doctor and patient:
