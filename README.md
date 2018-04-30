@@ -48,29 +48,6 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 
 [### Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**: Part 2](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part2/README.md)
 
-Rename application.properties to application.yml and add the following into it.
-
-```
-server:
-  port: 9080
-zuul:
-  routes:
-    doctor:
-      url: http://localhost:9081
-      sensitive-headers:
-    booking:
-      url: http://localhost:9083
-      sensitive-headers:
-    payment:
-      url: http://localhost:9084
-      sensitive-headers:
-    patient:
-      url: http://localhost:9082
-      sensitive-headers:
-    main:
-      url: http://localhost:9080
-      sensitive-headers:
-```
 
 ### To create projects booking, doctor and patient:
 
