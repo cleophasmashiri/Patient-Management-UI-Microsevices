@@ -1,7 +1,5 @@
 # UI as Microservices with Spring Cloud Gateway and angular 1 and 5
 
-[Facebook](https://www.facebook.com/cleophas.mashiri)
-
 ---
 This article is going to show you how to develop UI as multiple UI microsevices, in other words I am going to apply microservice concept to a UI. If this is done right, it gives us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth. 
 
@@ -30,15 +28,11 @@ We are going to build standalone UI applications that function as one applicatio
 My motivation for breacking the UI as above, is to show you how to apply microservice thinking to a monlithic UI, this is problem you need to pay close attention. I have seen people breaking UI into technical components, you will cry if you do this. In DDD the concept of [bounded context](http://bit.ly/bounded-context) encourages us to breaking-up our domain models around business capabilities. I prefer to lean more torwards [Self-Contained-Systems](http://bit.ly/2JcwAtm). 
 
 ## Iterations
-We are going to break our deliverables into the following iterations.
 
-1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
-2. [Using configuration service (Cloud Configuration) Part-2](#link2).
-3. [Using discovery service(Eureka) Part-3]((#link3)).
-4. [Authentication Part-5](#link5)
-
-
-### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part1/README.md)
+### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)
+### 2. [Creating Child UI microservices with **(Angular 5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular5/README.md)
+### 3. [Creating Child UI microservice with **(Angular 1.5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular1x/README.md)
+### 4. [Add Configuration microservice with **(Spring Cloud Configuration Service)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/config/README.md)
 
 
 ### To create projects booking, doctor and patient:
