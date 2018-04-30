@@ -35,8 +35,7 @@ We are going to break our deliverables into the following iterations.
 1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
 2. [Using configuration service (Cloud Configuration) Part-2](#link2).
 3. [Using discovery service(Eureka) Part-3]((#link3)).
-4. [Deploy to Heroku](#link4).
-5. [Authentication Part-5](#link5)
+4. [Authentication Part-5](#link5)
 
 ## [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
 In this part 1 article, we are going to develop 5 UI applications as microservices, this seems a lot work in one iteration, but these are skeleton applications that will help us to physical show the idea of UI as microservice. 
@@ -288,8 +287,7 @@ This is the end of part 1 of the application.
 1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
 2. [Using configuration service (Cloud Configuration) Part-2](#link2).
 3. [Using discovery service(Eureka) Part-3]((#link3)).
-4. [Dockerise Part-4](#link4).
-5. [Authentication Part-5](#link5)
+4. [Authentication Part-5](#link5)
 
 **[View the demo on heroku](https://med101.herokuapp.com/)**
 
