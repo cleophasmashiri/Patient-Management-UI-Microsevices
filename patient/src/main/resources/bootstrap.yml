@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: patient
+  cloud:
+    config:
+      uri: http://localhost:8888

@@ -1,2 +1,8 @@
 server:
-  port: 8083
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+           uri: /Users/cleophas/my/apps/microservices/doctor-booking-consulting/git-config-repo

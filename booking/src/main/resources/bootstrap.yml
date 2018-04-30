@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: booking
+  cloud:
+    config:
+      uri: http://localhost:8888
