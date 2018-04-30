@@ -1,4 +1,4 @@
-# UI as microservices creating, api gateway part 2
+# UI as microservices creating, api gateway part 1
 
 UI as Microservices Part 2: Creating Gateway with Spring Cloud and Angular 5
 
