@@ -29,9 +29,11 @@ My motivation for breacking the UI as above, is to show you how to apply microse
 
 ## Iterations
    <details>
-      <summary>### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)</summary>
-      
+      <summary>
+	      ### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)
+	</summary>  
     </details>
+    
 ### 2. [Creating Child UI microservices with **(Angular 5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular5/README.md)
 ### 3. [Creating Child UI microservice with **(Angular 1.5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular1x/README.md)
 ### 4. [Deploy to **Heroku**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/config/README.md)
