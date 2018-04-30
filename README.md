@@ -46,7 +46,7 @@ In this part 1 article, we are going to develop 5 UI applications as microservic
 4. Doctor consultation management microservice **(Angular 5 and Spring-boot)**.
 5. Payments managment UI **(Angular 1.5 and Spring-boot)**
 
-[### Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**: Part 2](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part2/README.md)
+### [Main UI microservice **(Angular 5, Spring-boot and Zuul gateway)**: Part 2](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part2/README.md)
 
 
 ### To create projects booking, doctor and patient:
