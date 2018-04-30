@@ -28,12 +28,13 @@ We are going to build standalone UI applications that function as one applicatio
 My motivation for breacking the UI as above, is to show you how to apply microservice thinking to a monlithic UI, this is problem you need to pay close attention. I have seen people breaking UI into technical components, you will cry if you do this. In DDD the concept of [bounded context](http://bit.ly/bounded-context) encourages us to breaking-up our domain models around business capabilities. I prefer to lean more torwards [Self-Contained-Systems](http://bit.ly/2JcwAtm). 
 
 ## Iterations
+   
    <details>
-      <summary>
-	      ### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)
-	</summary>  
+      <summary>Creating Gateway Main UI microservice with Angular 5, Spring-boot and Zuul</summary> 
+	Details
     </details>
     
+ ### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)
 ### 2. [Creating Child UI microservices with **(Angular 5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular5/README.md)
 ### 3. [Creating Child UI microservice with **(Angular 1.5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular1x/README.md)
 ### 4. [Deploy to **Heroku**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/config/README.md)
