@@ -77,23 +77,6 @@ server:
  ./main/mvnw spring-boot:run && ./patient/mvnw spring-boot:run && ./doctor/mvnw spring-boot:run && ./payment/mvnw spring-boot:run && ./booking/mvnw spring-boot:run
 ```
 
-Windows
-```
- main/mvnw.cmd spring-boot:run && patient/mvnw.cmd spring-boot:run && doctor/mvnw.cmd spring-boot:run && payment/mvnw.cmd spring-boot:run && ./booking/mvnw.cmd spring-boot:run
-```
-
-This is the end of part 1 of the application.
-
-1. [UI as a service with Spring Cloud Gateway and angular 1 and 5 Part-1](#link1).
-2. [Using configuration service (Cloud Configuration) Part-2](#link2).
-3. [Using discovery service(Eureka) Part-3]((#link3)).
-4. [Authentication Part-5](#link5)
-
 **[View the demo on heroku](https://med101.herokuapp.com/)**
 
-## Important Links
-1. [Angular 1.5 and 5, Javascript, Typescript](https://link1.com)
-2. [Markdown](https://link2.com).
-3. [Java, Spring Boot and Spring Cloud](https://link3.com).
-4. [Docker](https://link4.com).
 
