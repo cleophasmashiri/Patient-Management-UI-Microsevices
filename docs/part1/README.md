@@ -164,27 +164,6 @@ $ sed -i -e 's,dist,target/classes/static,' .angular-cli.json
   ],
 ```
 
-## Add Zuul
-
-Add the annotation @EnableZuulProxy to the MainApplication
-
-```
-@EnableZuulProxy
-public class MainApplication
-```
-
-Rename application.properties to application.yml and add the following into it.
-
-```
-server:
-  port: 9080
-zuul:
-  routes:
-    main:
-      url: http://localhost:9080
-      sensitive-headers:
-```
-  
 ## Run
 ```
 ./mvnw spring-boot:run

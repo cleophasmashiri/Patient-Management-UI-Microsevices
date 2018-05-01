@@ -29,11 +29,11 @@ My motivation for breacking the UI as above, is to show you how to apply microse
 
 ## Iterations   
     
-### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/tutorials/part1/README.md)
-### 2. [Creating Child UI microservices with **(Angular 5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular5/README.md)
-### 3. [Creating Child UI microservice with **(Angular 1.5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/angular1x/README.md)
-### 4. [Deploy to **Heroku**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/config/README.md)
-### 5. [Add Configuration microservice with **(Spring Cloud Configuration Service)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/config/README.md)
+### 1. [Creating Gateway Main UI microservice with **(Angular 5, Spring-boot and Zuul gateway)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part1/README.md)
+### 2. [Creating Child UI microservices with **(Angular 5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part2/README.md)
+### 3. [Creating Child UI microservice with **(Angular 1.5, Spring-boot)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part3/README.md)
+### 4. [Deploy to **Heroku**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part4/README.md)
+### 5. [Add Configuration microservice with **(Spring Cloud Configuration Service)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part5/README.md)
 
 
 ### To create projects booking, doctor and patient:
