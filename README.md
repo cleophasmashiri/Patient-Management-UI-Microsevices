@@ -35,40 +35,6 @@ My motivation for breacking the UI as above, is to show you how to apply microse
 ### 4. [Deploy to **Heroku**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part4/README.md)
 ### 5. [Add Configuration microservice with **(Spring Cloud Configuration Service)**](https://github.com/cleophasmashiri/Patient-Management-UI-Microsevices/blob/master/docs/part5/README.md)
 
-
-### To create projects booking, doctor and patient:
-
- copy the project main as booking:
-  1. Remove the zuul dependency from the pom.xml
-  2. Remove @EnableZuulProxy from the MainApplication
-
-     ```
-     @EnableZuulProxy
-     public class MainApplication
-     ```
-
-```
-	<dependency>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-	</dependency>
-```
-Make copy booking to make doctor and patient projects.
-
-Update application.yml as per table 1 below
-server:
-    port: 9080
-
-##### Table 1
-
-| application.yml | Port          |
-| --------------- |:-------------:|
-| doctor          | 9081          |
-| booking         | 9082          |
-| patient         | 9083          |
-| payment         | 9084          |
-
-
 ## How to run the apps.
 
  . cd to Patient-Management-UI-Microsevices folder and run the following
