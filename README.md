@@ -1,7 +1,7 @@
 # UI as Microservices with Spring Cloud Gateway and angular 1 and 5
 
 ---
-This article is going to show you how to develop UI as multiple UI microsevices, in other words I am going to apply microservice concept to a UI. If this is done right, it gives us a number of benefits, for example autonomus build pipelines and deployments, autonomus teams and so forth. 
+This article is going to show you how to develop UI as multiple UI microsevices, in other words I am going to apply microservice concept to a UI. If this is done right, it gives us a number of benefits, for example autonomous build pipelines and deployments, autonomous teams and so forth. 
 
 Applying Microservice on the UI is not that common, I have seen examples using [web components](http://bit.ly/web-components-ui-composition), [server-side UI compostion](http://bit.ly/composite-UI-based-microservice). Another interesting article uses [Spring gateway with multiple UIs](http://bit.ly/Multiple-UI-Applications-Gateway) article  All I can say its hard, but its doable.    
 
